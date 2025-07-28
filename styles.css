@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; 
+  background: #f4f4f4; 
+  color: #333;
+}
+header {
+  background: #2E8B57;
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+/* Menu hamburger (3 puntini) */
+#menuBtn {
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+#menuBtn:hover {
+  color: #a0d6a0;
+}
+/* Menu tendina */
+#menu {
+  position: absolute;
+  top: 3.5rem;
+  left: 1rem;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  width: 250px;
+  display: none;
+  z-index: 100;
+}
+#menu ul {
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+#menu li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+#menu li:hover {
+  background: #e6f0e6;
+}
+/* Sottoliste (prodotti) */
+.submenu {
+  display: none;
+  background: #f9f9f9;
+  border-left: 3px solid #2E8B57;
+  margin-left: 1rem;
+  padding-left: 0.5rem;
+}
+.submenu li {
+  border: none;
+  padding: 0.3rem 1rem;
+  font-size: 0.9rem;
+}
+.submenu li:hover {
+  background: #d8ead8;
+}
